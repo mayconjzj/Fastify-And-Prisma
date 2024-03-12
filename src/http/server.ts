@@ -87,6 +87,12 @@ server.delete('/:id', async (request, reply) => {
   return reply.status(204).send();
 });
 
+server.delete('/', async (request, reply) => {
+  await prisma.user.deleteMany();
+
+  return reply.status(204).send();
+});
+
 server
   .listen({
     host: '0.0.0.0',
