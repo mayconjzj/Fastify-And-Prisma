@@ -34,8 +34,16 @@
           {
               "newlinesBetween": "always",
               "groups": [
-                  "/^@/database/",
-                  ["module", "parent", "sibling", "index"]
+                "/^contentlayer/",
+                "/^fs/",
+                "module",
+                "/^@shared/",
+                "absolute",
+                "/utils/",
+                "/^@/models/",
+                "/^@/store/",
+                "/^@/lib/",
+                ["parent", "sibling", "index"]
               ],
               "alphabetize": { "order": "asc", "ignoreCase": true }
           }
