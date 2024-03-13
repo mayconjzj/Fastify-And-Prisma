@@ -1,8 +1,8 @@
-import { PrismaClient } from '@prisma/client';
 import fastify from 'fastify';
 import { z } from 'zod';
 
-const prisma = new PrismaClient();
+import { prisma } from '@/lib/prisma-client';
+
 const server = fastify();
 
 server.get('/', async () => {
